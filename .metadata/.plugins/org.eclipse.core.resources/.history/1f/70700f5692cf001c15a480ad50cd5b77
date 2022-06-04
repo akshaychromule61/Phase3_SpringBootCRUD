@@ -1,0 +1,48 @@
+package src.design_patterns.creational_patterns;
+
+interface MyWraper{
+	void printType();
+}
+class MyInteger implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyInte");
+	}
+}
+class MyDouble implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyDouble");
+	}
+}
+class MyBoolean implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyBoolean");
+	}
+}
+class MyCharacter implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyCharacter");
+	}
+}
+
+class MyWrapperFactory{
+	public MyWraper getMyWrapperInstance(String value) {
+		boolean notDigitFlag = false;
+		for(int i=0;i<value.length();i++) {
+			if(value.codePointAt(i)<48 || value.codePointAt(i)>57) {
+				notDigitFlag=true;
+				break;
+			}
+		}
+		if(!notDigitFlag) {
+			return new MyInteger();
+		}
+	}
+}
+public class FactoryMethodTaskDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

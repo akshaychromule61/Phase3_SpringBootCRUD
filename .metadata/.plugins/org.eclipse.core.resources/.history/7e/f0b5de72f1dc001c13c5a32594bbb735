@@ -1,0 +1,16 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+      
+      <bean id="fooBean" class="com.foobar.demo.userBeans.Foo">
+      		<constructor-arg index="0" value="Akshay"></constructor-arg >
+      </bean>
+      <bean id="barBean" class="com.foobar.demo.userBeans.Bar">
+      		<constructor-arg index="0" value="Priyanka"></constructor-arg>
+      		<constructor-arg index="1" value="22"></constructor-arg>
+      </bean>
+</beans>

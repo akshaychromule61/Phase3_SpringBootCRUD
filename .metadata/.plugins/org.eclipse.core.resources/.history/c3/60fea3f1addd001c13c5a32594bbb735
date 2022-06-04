@@ -1,0 +1,20 @@
+package com.spring.apps.calculator;
+
+import java.util.Scanner;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.spring.apps.calculator.beans.arithmeticoperations.BasicArithmeticOperations;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("application-context-config.xml");
+		BasicArithmeticOperations bao = context.getBean("basicArithmeticOperations", BasicArithmeticOperations.class);		System.out.println("First Spring application");
+		
+		context.close();
+	}
+
+}

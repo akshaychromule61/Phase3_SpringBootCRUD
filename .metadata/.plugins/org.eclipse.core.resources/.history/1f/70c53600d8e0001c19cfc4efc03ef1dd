@@ -1,0 +1,5 @@
+package com.spring.boot.mysql.connector.demo.daos;
+
+public interface WorkerDao {
+
+}

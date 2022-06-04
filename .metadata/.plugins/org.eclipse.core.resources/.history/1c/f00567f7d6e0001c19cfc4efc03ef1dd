@@ -1,0 +1,48 @@
+package com.spring.boot.mysql.connector.demo.models;
+
+import java.sql.Timestamp;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown=true)
+public class Worker implements Comparable<Worker> {
+	Integer workerId;
+	String firstName;
+	String lastName;
+	Integer salary;
+	
+	@JsonFormat(pattern="yyyy-MM-dd")
+	Timestamp joiningDate;
+	String department;
+	public Worker() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Worker(Integer workerId, String firstName, String lastName, Integer salary, String department) {
+		super();
+		this.workerId = workerId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.salary = salary;
+		this.department = department;
+	}
+	
+	public Worker(Integer workerId, String firstName, String lastName, Integer salary, Timestamp joiningDate,
+			String department) {
+		super();
+		this.workerId = workerId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.salary = salary;
+		this.joiningDate = joiningDate;
+		this.department = department;
+	}
+	@Override
+	public int compareTo(Worker o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+}

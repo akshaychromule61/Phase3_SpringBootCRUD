@@ -1,0 +1,33 @@
+package src.design_patterns.creational_patterns;
+interface Notification1 {
+    void notifyUser();
+}
+
+class SMSNotification1 implements Notification1 {
+    @Override
+    public void notifyUser() {
+        System.out.println("Sending an SMS notification");
+    }
+}
+
+class EmailNotification1 implements Notification1 {
+    @Override
+    public void notifyUser() {
+        System.out.println("Sending an e-mail notification");
+    }
+}
+
+public class FactoryDriver {
+
+	public static void main(String[] args) {
+		// this is called polymorfic object
+
+		Notification emlNoti = new EmailNotification1();
+		Notification smsNoti = new SMSNotification1();
+
+		emlNoti.notifyUser();
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.firstSpring.demo.beans;
+
+public class UserBean {
+
+}

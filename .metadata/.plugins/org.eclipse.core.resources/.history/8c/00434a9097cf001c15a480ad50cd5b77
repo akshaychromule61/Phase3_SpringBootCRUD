@@ -1,0 +1,79 @@
+package src.design_patterns.creational_patterns;
+
+interface MyWraper{
+	void printType();
+}
+class MyInteger implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyInteger");
+	}
+}
+class MyDouble implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyDouble");
+	}
+}
+class MyBoolean implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyBoolean");
+	}
+}
+class MyCharacter implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyCharacter");
+	}
+}
+
+class MyWrapperFactory{
+	public MyWraper getMyWrapperInstance(String value) {
+        // checking for MyInteger
+		boolean notDigitFlag = false;
+		for(int i=0;i<value.length();i++) {
+			if(value.codePointAt(i)<48 || value.codePointAt(i)>57) {
+				notDigitFlag=true;
+				break;
+			}
+		}
+		if (!notDigitFlag) 
+			return new MyInteger();
+		
+		//checking for MyDOuble
+		boolean notDoubleFlag=false;
+		for(int i=0;i<value.length();i++) {
+			if(value.codePointAt(i)<48 || value.codePointAt(i)>57 && value.codePointAt(i)!=46) {
+				notDoubleFlag=true;
+				break;
+			}
+		}
+		if(!notDoubleFlag) {
+			return new MyDouble();
+		}
+		//checking for boolean
+		if(value.equalsIgnoreCase("true")||value.equalsIgnoreCase("false")) {
+			return new MyBoolean();
+		}
+		//Checking for characters
+		if(value.codePointAt(0)>64 && value.codePointAt(0)<91 || value.codePointAt(0)>96 && value.codePointAt(0)<123) {
+			return new MyCharacter();
+		}
+		throw new IllegalArgumentException("Value format not recognize");
+	}
+}
+public class FactoryMethodTaskDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyWrapperFactory factory = new MyWrapperFactory();
+		//MyWraper obj = factory.getMyWrapperInstance("123");
+		//MyWraper obj1 = factory.getMyWrapperInstance("true");
+		//MyWraper obj2 = factory.getMyWrapperInstance("a");
+		//MyWraper obj3 = factory.getMyWrapperInstance("344.45");
+
+		//obj.printType();
+		//obj1.printType();
+		//obj2.printType();
+		//obj3.printType();
+
+	}
+
+}

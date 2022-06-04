@@ -1,0 +1,10 @@
+package com.springboot.workers.jdbcexample;
+
+public class WorkersJdbcApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

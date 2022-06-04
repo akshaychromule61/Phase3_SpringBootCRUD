@@ -1,0 +1,41 @@
+package com.springboot.workers.jdbcexample.repository;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.springboot.workers.jdbcexample.dao.WorkerDAO;
+import com.springboot.workers.jdbcexample.model.Worker;
+
+public class WorkerRepository implements WorkerDAO{
+
+	@Override
+	public int add(Worker worker) throws SQLException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void delete(int workerId) throws SQLException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Worker getWorker(int workerId) throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Worker> getWorkers() throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(Worker worker) throws SQLException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

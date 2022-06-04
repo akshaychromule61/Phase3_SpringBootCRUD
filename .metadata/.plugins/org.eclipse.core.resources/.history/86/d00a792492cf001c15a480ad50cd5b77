@@ -1,0 +1,39 @@
+package src.design_patterns.creational_patterns;
+
+interface MyWraper{
+	void printType();
+}
+class MyInteger implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyInte");
+	}
+}
+class MyDouble implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyDouble");
+	}
+}
+class MyBoolean implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyBoolean");
+	}
+}
+class MyCharacter implements MyWraper{
+	public void printType() {
+		System.out.println("The value of the type is MyCharacter");
+	}
+}
+
+class MyWrapperFactory{
+	public MyWraper getMyWrapperInstance(String value) {
+		
+	}
+}
+public class FactoryMethodTaskDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

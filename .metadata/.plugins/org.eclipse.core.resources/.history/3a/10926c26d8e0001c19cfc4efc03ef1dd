@@ -1,0 +1,23 @@
+package com.spring.boot.mysql.connector.demo.repository;
+
+import java.sql.Connection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.spring.boot.mysql.connector.demo.daos.WorkerDao;
+import com.spring.boot.mysql.connector.demo.utils.DatabaseConnection;
+
+@Repository
+public class WorkerRepository implements WorkerDao{
+	private final Connection connection;
+	
+	@Autowired
+	public WorkerRepository(DatabaseConnection connection) {
+		super();
+		this.connection = null;
+		//this.connection = connection.getConnection();
+
+	}
+	
+}

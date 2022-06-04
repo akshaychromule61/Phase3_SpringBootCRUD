@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="src.design_patterns.creational_patterns.SampleClass"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.firstSpring.demo.beans.UserBean"/>
+    <fullyQualifiedTypeName name="com.foobar.demo.userBeans.Foo"/>
+    <fullyQualifiedTypeName name="com.foobar.demo.userBeans.Bar"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.spring.apps.calculator.beans.arithmeticoperations.BasicArithmeticOperations"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.spring.maven.demo.bean.UserBean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+</qualifiedTypeNameHistroy>

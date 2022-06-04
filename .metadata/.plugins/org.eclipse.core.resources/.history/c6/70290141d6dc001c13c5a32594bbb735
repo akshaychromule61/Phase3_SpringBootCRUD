@@ -1,0 +1,22 @@
+package com.foobar.demo;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.foobar.demo.userBeans.Bar;
+import com.foobar.demo.userBeans.Foo;
+
+public class FooBarApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("");
+		
+		Foo f = context.getBean("fooBean",Foo.class);
+		
+		Bar b = context.getBean("barBean",Bar.class);
+		
+		context.close();
+	}
+
+}

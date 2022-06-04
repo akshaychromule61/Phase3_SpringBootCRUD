@@ -1,0 +1,31 @@
+package src.method.overiding;
+class Sports{
+	String getName() {
+		return "Generic Sports";
+	}
+	void getNumberOfTeamMembers() {
+		System.out.println("Each tem has n number of players in" + getName());
+	}
+}
+class Soccer extends Sports{
+	@Override
+	String getName() {
+		return "Soccer class";
+	}
+	@Override
+	void getNumberOfTeamMembers() {
+		System.out.println("Each team has 11 players in" + getName());
+	}
+}
+public class Tester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Sports sp = new Sports();
+		sp.getNumberOfTeamMembers();
+		Soccer sc = new Soccer();
+		sc.getNumberOfTeamMembers();
+
+	}
+
+}

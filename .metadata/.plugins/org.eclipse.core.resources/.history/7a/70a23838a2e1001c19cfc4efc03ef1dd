@@ -1,0 +1,5 @@
+package com.springboot.workers.jdbcexample.dao;
+
+public interface WorkerDAO {
+
+}

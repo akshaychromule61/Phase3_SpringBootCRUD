@@ -1,0 +1,10 @@
+package src.design_patterns.creational_patterns;
+
+public class FactoryDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.springboot.workers.jdbcexample.utils;
+
+public class DatabaseConnection {
+
+}

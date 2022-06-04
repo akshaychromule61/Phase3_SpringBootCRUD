@@ -1,0 +1,12 @@
+package com.firstSpring.demo.beans;
+
+public class UserBean {
+	private String name;
+	private int age;
+	public UserBean() {
+		//non-parameterized construction from super class
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+}

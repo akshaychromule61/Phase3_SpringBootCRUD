@@ -1,0 +1,7 @@
+package com.springboot.workers.jdbcexample.controller;
+
+import com.springboot.workers.jdbcexample.repository.WorkerRepository;
+
+public class WorkerController {
+	WorkerRepository workerRepo;
+}

@@ -1,0 +1,5 @@
+package com.foobar.demo.userBeans;
+
+public class Bar {
+
+}

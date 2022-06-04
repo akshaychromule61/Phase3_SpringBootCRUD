@@ -1,0 +1,20 @@
+package com.spring.boot.mysql.connector.demo.utils;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class DatabaseConnection {
+	private Connection connecton=null;
+	//db. all properties implemented in application.properties file
+	public DatabaseConnection(@Value("${db.url}") String url, 
+							  @Value("${db.username}") String username, 
+							  @Value("${db.password}") String password) throws SQLException{
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+}

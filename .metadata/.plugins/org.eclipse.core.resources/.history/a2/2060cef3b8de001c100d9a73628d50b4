@@ -1,0 +1,5 @@
+package com.spring.maven.demo.bean;
+
+public class UserBean {
+
+}

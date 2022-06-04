@@ -1,0 +1,32 @@
+package src.string.anagram.program;
+
+import java.util.Arrays;
+
+public class StringAnagrm {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//using uquals and sort method
+		//using builder and hashpam
+		String str1="Tom Marvolo Riddle";  
+        String str2="I am Lord Voldemort"; 
+        boolean status=false;
+        str1=str1.replaceAll("\\s", "");
+        str2=str2.replaceAll(" ", "");
+        if(str1.length()!=str2.length()) {
+        	status=false;
+        }else {
+        	char[] c1 = str1.toLowerCase().toCharArray();
+        	char[] c2=  str2.toLowerCase().toCharArray();
+        	Arrays.sort(c1);
+        	Arrays.sort(c2);
+        	status=Arrays.equals(c1, c2);
+        }
+        
+        if(status) {
+        	System.out.println("String is Anagram");
+        }else {}
+        System.out.println("String is not Anagram");
+        
+	}
+
+}

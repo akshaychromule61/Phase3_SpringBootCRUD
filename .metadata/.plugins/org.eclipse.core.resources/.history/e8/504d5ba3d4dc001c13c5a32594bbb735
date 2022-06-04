@@ -1,0 +1,10 @@
+package com.foobar.demo;
+
+public class FooBarApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
